@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Q2 Seatwork 1</title>
+
+<style>
+
+.container {
+
+padding-top: 50px;
+
+padding-bottom: 50px;
+
+text-align: center;
+
+color: white;
+background: #676e75;
+box-shadow: 0px 0px 10px 0px #000000;
+width: 400px;
+height: 300px;
+margin: 0 auto;
+}
+.header {
+
+background: #212529;
+
+color: white;
+
+padding: 30px;
+
+text-align: center;
+
+}
+
+footer {
+
+    text-align: center;
+
+}
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="reactor"></div>
+        <h1>Band Checker</h1>
+        <p>Candidate Verification System</p>
+    </header>
+    </div>
+
+
+    <main>
+        <form class="container">
+            <h1>Enter your name</h1>
+            <input type="text" id="first_name" placeholder="Enter your First Name"><br>
+            <input type="text" id="last_name" placeholder="Enter your Last Name"><br>
+            <input type="button" py-click="candidate_checker" value="Enter">
+            <div id="result"></div>
+        </form>
+       
+        
+    </main>
+    <footer>
+        &copy: 2026 <span>OBMC LP Band</span> &bull; Seatwork 1 &bull; 2nd Quarter
+    </footer>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
